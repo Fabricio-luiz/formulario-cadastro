@@ -41,7 +41,8 @@ $(document).ready(function(){
             cep: '<span class="message-error">Este campo é obrigatório</span>',
         },
         submitHandler: function(form) {
-            console.log(form)
+            alert('Formulário cadastrado')
+            form.reset(); /*limpa formulario*/
         },
         invalidHandler: function(evento, validador) {
             let camposIncorretos = validador.numberOfInvalids();
